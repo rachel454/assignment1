@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <style>
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #contact-form{
+                background-color: #e8e8e8;
+                padding: 20px 30px;
+                width: 800px;
+                border-radius: 4px;
+                margin: auto;
+                margin-top: 50px;
+            }
+
+            input,select,textarea{
+                width: 100%;
+                padding: 6px;
+                border-style: none;
+                border-radius: 4px;
+                margin-top: 6px;
+            }
+
+            label{
+                padding-bottom: 4px;
+                font-size: 13px;
+                font-weight: bold;
+                color:black;
+            }
+
+            #submit-button{
+                padding: 8px 13px;
+                background-color: green;
+                color: white;
+                font-weight: bold;
+                font-size: 10px;
+                border-style: none;
+                border-radius: 2px;
+            }
+              
+    </style>
+</head>
+<body>
+    <form id="contact-form">
+        <label for="firstname">First Name</label><br>
+        <input name="firstname" placeholder="Your name..."/><br><br>
+       
+        <label for="lastname">Last Name</label><br>
+        <input name="lastname" placeholder="Your last name..."/><br><br>
+       
+        <label for="country">Country</label><br>
+
+        <select name="coutry">
+            <option>Ghana</option>
+            <option>Nigeria</option>
+            <option>South Africa</option>
+            <option>USA</option>
+        </select><br><br>
+    
+
+        <label for="subject">Subject</label><br>
+        <textarea name="subject" rows="5" placeholder="Write something...">
+
+        </textarea><br><br>
+
+
+        <button id="submit-button" type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
